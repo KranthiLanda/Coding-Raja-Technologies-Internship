@@ -1,0 +1,123 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* Root Variables */
+:root{
+    --pink: #e5345b;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+/* Button Styles */
+.btn, .bg-primary {
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+}
+
+.btn:not(.nav-btns button):hover,
+.bg-primary:hover {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+/* Header Styles */
+#header {
+    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+.carousel-item .btn {
+    border-color: #fff!important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink)!important;
+}
+
+/* Title Styles */
+.title h2::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    margin-left: -20px;
+}
+
+/* Collection Styles */
+.active-filter-btn,
+.special-img span {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+.filter-button-group .btn:hover {
+    color: #fff;
+}
+
+/* Offers Section Styles */
+#offers {
+    background: url(../images/offer_img.jpg) center/cover no-repeat;
+}
+
+.offers-content span {
+    font-size: 28px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+/* Footer Styles */
+footer .brand {
+    font-family: 'Kaisei Tokumin', serif;
+    letter-spacing: 2px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--pink);
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
